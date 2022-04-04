@@ -4,7 +4,7 @@
   "icon": "media/icon.png",
   "description": "Syntax Highlighting for the Alpaga language",
   "repository": "https://github.com/Garfield1002/alpaga-lang",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "JackRoyer",
   "engines": {
     "vscode": "^1.46.0"
