@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Alpaga",
+  "patterns": [
+    {
+      "include": "#ocaml"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.alpaga",
+      "match": "\\b(rules|axiom|non-terminals|tokens)\\b"
+    },
+    {
+      "name": "keyword.operators.alpaga",
+      "match": "(->|{|})"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.alpaga",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.alpaga"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.alpaga"
+            }
+          }
+        }
+      ]
+    },
+    "ocaml": {
+      "patterns": [
+        {
+          "name": "meta.embedded.block.ocaml",
+          "begin": "(^[ \t]+)?{",
+          "beginCaptures": {
+            "0": { "name": "meta.embedded.block.begin.ocaml" }
+          },
+          "end": "(^[ \t]+)?}",
+          "endCaptures": {
+            "0": { "name": "meta.embedded.block.end.ocaml" }
+          },
+          "patterns": [
+            {
+              "include": "source.ocaml"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scopeName": "source.g"
+}

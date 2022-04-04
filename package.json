@@ -1,0 +1,37 @@
+{
+  "name": "alpaga-lang",
+  "displayName": "Alpaga Lang",
+  "description": "Syntax Highlighting for Alpaga lang",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "alpaga",
+        "aliases": [
+          "Alpaga",
+          "alpaga"
+        ],
+        "extensions": [
+          ".g"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "alpaga",
+        "scopeName": "source.g",
+        "path": "./syntaxes/alpaga.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.ocaml": "ocaml"
+        }
+      }
+    ]
+  }
+}
