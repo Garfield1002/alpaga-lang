@@ -1,8 +1,11 @@
 {
   "name": "alpaga-lang",
   "displayName": "Alpaga Lang",
-  "description": "Syntax Highlighting for Alpaga lang",
+  "icon": "media/icon.png",
+  "description": "Syntax Highlighting for the Alpaga language",
+  "repository": "https://github.com/Garfield1002/alpaga-lang",
   "version": "0.1.0",
+  "publisher": "JackRoyer",
   "engines": {
     "vscode": "^1.46.0"
   },
